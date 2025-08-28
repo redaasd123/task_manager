@@ -1,0 +1,1 @@
+const kTaskCollection = 'tasks';
