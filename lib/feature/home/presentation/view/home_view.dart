@@ -27,14 +27,13 @@ class HomeView extends StatelessWidget {
             return;
           } else if (state is ConnectivityConnected) {
             if (!cubit.isFirstFetch) {
-              //cubit.fetchTask();
               showGreenFlush(context, backOnlineMessage);
             }
           }
         },
         child: Scaffold(
           appBar: AppBar(
-            title: Text(welcome, style: Styles.textStyle30),
+            title: Text(welcomeMessage, style: Styles.textStyle30),
             backgroundColor: Colors.white,
             elevation: 0,
             scrolledUnderElevation: 0,
